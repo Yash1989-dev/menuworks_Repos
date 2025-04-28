@@ -1,0 +1,95 @@
+<div class="w-full px-4">
+  <div class="flex flex-col md:flex-row md2:flex-row gap-2">
+      <div class="md2:w-2/5 w-full">
+        <app-card>
+          <app-card-body>
+            <div class="w-full flex justify-end">
+              <app-icon name="settings"></app-icon>
+            </div>
+            <picture class="mb-2 block">
+              <img src="/assets/images/img1.jpg">
+            </picture>
+            <section class="flex items-center bg-gray1 p-3">
+              <app-icon name="notes" size="50px"></app-icon>
+              <div class="flex-1">
+                <strong>April 15 QA Sector</strong>
+                <div>Smoke testing QA</div>
+              </div>
+            </section>
+          </app-card-body>
+        </app-card>
+      </div>
+      <div class="md2:w-3/5 w-full flex flex-col gap-2">
+        <app-card>
+          <app-card-header>
+            <h1 class="font-semibold text-blue-title">RECIPE SEARCH</h1>
+          </app-card-header>
+          <app-card-body>
+            <section class="flex items-center gap-2">
+              <app-search-input></app-search-input>
+              <mat-form-field appearance="outline" class="bottom-space-0">
+                <mat-label>Select an option</mat-label>
+                <mat-select>
+                  <mat-option>None</mat-option>
+                  <mat-option value="option1">Option 1</mat-option>
+                  <mat-option value="option2">Option 2</mat-option>
+                  <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </section>
+            <section class="pt-2">
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button [value]="item.value" *ngFor="let item of searchKeys">{{item.name}}</mat-radio-button>
+              </mat-radio-group>
+            </section>
+          </app-card-body>
+        </app-card>
+        <section class="w-full flex gap-2 flex-col flex-wrap sm:flex-row md:flex-row">
+          <app-card class="card-block1">
+            <app-card-header>
+              <h1 class="font-semibold text-blue-title">LAST REPORTS RUN</h1>
+            </app-card-header>
+            <app-card-body class="min-h-20">
+              
+            </app-card-body>
+          </app-card>
+
+          <app-card class="card-block1">
+            <app-card-header>
+              <h1 class="font-semibold text-blue-title">ALERTS &amp;  MAINTANANCE</h1>
+            </app-card-header>
+            <app-card-body class="min-h-20">
+              
+            </app-card-body>
+          </app-card>
+
+          <app-card class="card-block1">
+            <app-card-header>
+              <h1 class="font-semibold text-blue-title">RECENTLY ADDED RECIPES</h1>
+            </app-card-header>
+            <app-card-body class="min-h-20">
+              
+            </app-card-body>
+          </app-card>
+
+          <app-card class="card-block1">
+            <app-card-header>
+              <h1 class="font-semibold text-blue-title">MESSGES</h1>
+            </app-card-header>
+            <app-card-body class="min-h-20">
+              
+            </app-card-body>
+          </app-card>
+
+          <app-card class="card-block1">
+            <app-card-header>
+              <h1 class="font-semibold text-blue-title">LEGACY</h1>
+            </app-card-header>
+            <app-card-body class="min-h-20">
+              
+            </app-card-body>
+          </app-card>
+        </section>
+      </div>
+    </div>
+</div>
